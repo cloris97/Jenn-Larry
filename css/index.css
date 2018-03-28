@@ -1,0 +1,45 @@
+/* main content grid */
+main {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+}
+
+/* mission section */
+#mission {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 92.5vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5vw;
+    background-color: var(--blue);
+}
+/* product section */
+#product {
+    grid-column: 2 / span 1;
+    grid-row: 1 / 2;
+    height: 92.5vh;
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--yellow);
+}
+/* featured section */
+#featured {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    background-color: var(--pink);
+}
+
+#featured div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10vh;
+}
