@@ -37,9 +37,3 @@ main {
     grid-row: 2 / 3;
     background-color: var(--pink);
 }
-
-#featured div {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 10vh;
-}
