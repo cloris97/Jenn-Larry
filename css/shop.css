@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     margin: 3vh 25px;
+    flex-flow: row wrap;
 }
 #filters li {
     padding: 10px 25px;
@@ -32,4 +33,42 @@ section {
     grid-template-rows: auto;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
+}
+
+/* media queries */
+@media only screen and (max-width: 1150px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 850px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 650px) {
+    section {
+        margin: 0;
+        grid-column-gap: 0;
+        grid-row-gap: 10px;
+    }
+    .small {
+        max-height: 200px;
+    }
+    #filters {
+        margin: 0 10px 10px;
+    }
+    #filters li {
+        font-size: 0.6rem;
+        font-weight: 400;
+        padding: 0 15px 5px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #filters {
+        margin: 0 10px 10px;
+    }
+    #filters li {
+        padding: 5px;
+    }
 }
