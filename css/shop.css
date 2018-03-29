@@ -10,15 +10,19 @@
     font-weight: 700;
     text-transform: uppercase;
     color: var(--grey);
+    cursor: pointer;
+}
+.selected {
+    background-color: var(--pink);
+}
+.hide {
+    display: none;
 }
 .name {
     font-size: 1.1rem;
 }
 .price {
     font-size: 0.9rem;
-}
-body {
-    background-color: white;
 }
 /* product flexbox */
 section {
