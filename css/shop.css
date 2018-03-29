@@ -1,0 +1,31 @@
+#filters {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3vh 25px;
+}
+#filters li {
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--grey);
+}
+.name {
+    font-size: 1.1rem;
+}
+.price {
+    font-size: 0.9rem;
+}
+body {
+    background-color: var(--yellow);
+}
+/* product flexbox */
+section {
+    margin: 0 4vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}

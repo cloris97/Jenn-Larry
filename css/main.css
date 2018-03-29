@@ -4,6 +4,7 @@
     --blue: #def0fb;
     --yellow: #fff1d3;
     --pink: #fff5f1;
+    --grey: #404040;
 }
 /* default properties */
 * {
@@ -87,8 +88,9 @@ nav a:hover {
 
 /* footer */
 footer {
-    margin: 3vh 0;
+    padding: 25px 0;
     text-align: center;
+    background-color: white;
 }
 footer p {
     font-family: 'Lato', sans-serif;
@@ -112,6 +114,7 @@ footer a:hover {
 img.small {
     height: 250px;
     width: auto;
+    object-fit: cover;
 }
 img.big {
     height: 300px;

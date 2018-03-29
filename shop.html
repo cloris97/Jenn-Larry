@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Shop | Jenn&amp;Larry's</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/shop.css" />
 </head>
 <body>
     <!-- nav bar -->
@@ -21,86 +23,84 @@
         </ul>
     </nav>
     <!-- filters -->
-    <div>
-        <ul>
-            <li>Brittles</li>
-            <li>Cakes</li>
-            <li>Pies</li>
-            <li>Ice Cream</li>
-            <li>Gift Card</li>
-        </ul>
-    </div>
+    <ul id="filters">
+        <li>Brittles</li>
+        <li>Cakes</li>
+        <li>Pies</li>
+        <li>Ice Cream</li>
+        <li>Gift Card</li>
+    </ul>
     <!-- all products -->
     <section>
         <!-- brittles -->
         <figure>
-            <img src="img/brittle_cranberryalmond.jpg" alt="cranberry almond brittle">
-            <figcaption>Cranberry Almond Brittle</figcaption>
-            <figcaption>$4.39</figcaption>
+            <img class="small" src="img/brittle_cranberryalmond.jpg" alt="cranberry almond brittle">
+            <figcaption class="name">Cranberry Almond</figcaption>
+            <figcaption class="price">$4.39</figcaption>
         </figure>
         <figure>
-            <img src="img/brittle_darkchocolate.jpg" alt="dark chocolate brittle">
-            <figcaption>Dark Chocolate Supreme Brittle</figcaption>
-            <figcaption>$4.39</figcaption>
+            <img class="small" src="img/brittle_darkchocolate.jpg" alt="dark chocolate brittle">
+            <figcaption class="name">Dark Chocolate Supreme</figcaption>
+            <figcaption class="price">$4.39</figcaption>
         </figure>
         <figure>
-            <img src="img/brittle_milkchocolate.jpg" alt="milk chocolate brittle">
-            <figcaption>Milk Chocolate Supreme Brittle</figcaption>
-            <figcaption>$4.39</figcaption>
+            <img class="small" src="img/brittle_milkchocolate.jpg" alt="milk chocolate brittle">
+            <figcaption class="name">Milk Chocolate Supreme</figcaption>
+            <figcaption class="price">$4.39</figcaption>
         </figure>
         <figure>
-            <img src="img/brittle_whitechocolate.jpg" alt="white chocolate brittle">
-            <figcaption>White Chocolate Supreme Brittle</figcaption>
-            <figcaption>$4.39</figcaption>
+            <img class="small" src="img/brittle_whitechocolate.jpg" alt="white chocolate brittle">
+            <figcaption class="name">White Chocolate Supreme</figcaption>
+            <figcaption class="price">$4.39</figcaption>
         </figure>
         <figure>
-            <img src="img/brittle_original.jpg" alt="original brittle">
-            <figcaption>Jenn’s Original Supreme Brittle</figcaption>
-            <figcaption>$3.89</figcaption>
+            <img class="small" src="img/brittle_original.png" alt="original brittle">
+            <figcaption class="name">Jenn’s Original Supreme</figcaption>
+            <figcaption class="price">$3.89</figcaption>
         </figure>
         <figure>
-            <img src="img/brittle_bacon.jpg" alt="bacon brittle">
-            <figcaption>Jenn’s Original Supreme Brittle</figcaption>
-            <figcaption>$3.89</figcaption>
+            <img class="small" src="img/brittle_bacon.jpg" alt="bacon brittle">
+            <figcaption class="name">Bacon Supreme</figcaption>
+            <figcaption class="price">$3.89</figcaption>
         </figure>
         <!-- cakes -->
         <figure>
-            <img src="img/cake_big.jpg" alt="big cake">
-            <figcaption>Big Cake</figcaption>
-            <figcaption>$24.99</figcaption>
+            <img class="small" src="img/cake_big.jpg" alt="big cake">
+            <figcaption class="name">Big Cake</figcaption>
+            <figcaption class="price">$24.99</figcaption>
         </figure>
         <figure>
-            <img src="img/cake_little.jpg" alt="little cake gluten free">
-            <figcaption>Little Cake (Gluten Free)</figcaption>
-            <figcaption>$18.99</figcaption>
+            <img class="small" src="img/cake_little.jpg" alt="little cake gluten free">
+            <figcaption class="name">Little Cake (Gluten Free)</figcaption>
+            <figcaption class="price">$18.99</figcaption>
         </figure>
         <!-- pies -->
         <figure>
-            <img src="img/pie_tortoise.jpg" alt="tortoise ice cream pie">
-            <figcaption>Tortoise Ice Cream Pie</figcaption>
-            <figcaption>$21.99</figcaption>
+            <img class="small" src="img/pie_tortoise.jpg" alt="tortoise ice cream pie">
+            <figcaption class="name">Tortoise Ice Cream Pie</figcaption>
+            <figcaption class="price">$21.99</figcaption>
         </figure>
         <figure>
-            <img src="img/pie_chocolatepeanutbutter.jpg" alt="chocolate peanut butter pie">
-            <figcaption>Chocolate Peanut Butter Pie</figcaption>
-            <figcaption>$21.99</figcaption>
+            <img class="small" src="img/pie_chocolatepeanutbutter.jpg" alt="chocolate peanut butter pie">
+            <figcaption class="name">Chocolate Peanut Butter Pie</figcaption>
+            <figcaption class="price">$21.99</figcaption>
         </figure>
         <figure>
-            <img src="img/pie_tortoise.jpg" alt="ice cream pies">
-            <figcaption>Ice Cream Pies</figcaption>
-            <figcaption>$21.99</figcaption>
+            <img class="small" src="img/pie_tortoise.jpg" alt="ice cream pies">
+            <figcaption class="name">Ice Cream Pies</figcaption>
+            <figcaption class="price">$21.99</figcaption>
         </figure>
         <!-- ice cream -->
         <figure>
-            <img src="img/ice_cream.jpg" alt="tubbies ice cream">
-            <figcaption>Tubbies Ice Cream</figcaption>
-            <figcaption>$4.43</figcaption>
+            <img class="small" src="img/ice_cream.jpg" alt="tubbies ice cream">
+            <figcaption class="name">Tubbies Ice Cream</figcaption>
+            <figcaption class="price">$4.43</figcaption>
         </figure>
         <!-- gift card -->
         <figure>
-            <img src="img/gift_card.jpg" alt="gift cards">
-            <figcaption>Gift Cards</figcaption>
-            <figcaption>$5.00</figcaption>
+            <img class="small" src="img/gift_card.jpg" alt="gift cards">
+            <figcaption class="name">Gift Cards</figcaption>
+            <figcaption class="price">$5.00</figcaption>
         </figure>
     </section>
 
