@@ -113,8 +113,8 @@ footer a:hover {
     opacity: 0.6;
 }
 img.small {
-    height: 250px;
-    width: auto;
+    width: 250px;
+    height: auto;
     object-fit: cover;
 }
 img.big {
