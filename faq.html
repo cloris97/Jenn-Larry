@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/faq.css" />
 </head>
 <body>
     <!-- nav bar -->
@@ -20,10 +21,42 @@
             <a href="faq.html"><li>FAQ</li></a>
         </ul>
     </nav>
-    <section>
-        
-    </section>
-   <footer>
+    <main>
+        <div>
+            <h1 class="question">Where are you located and when are the hours?<i class="fas fa-chevron-down"></i></h1>
+            <h3 class="hidden">We are located at 49 York Street in Stratford Ontario, 
+                and we normally open from 12 - 5 pm on Saturdays. We are taking a
+                break right now and we are closed, but our shop will re-open for the summer season.
+            </h3>
+        </div>
+        <div>
+            <h1 class="question">How should I store my brittles?<i class="fas fa-chevron-down"></i></h1>
+            <h3 class="hidden">Store the brittles in a completely dry, airtight container. 
+                Any plastic container or glass jar with a tight-fitting lid isfine. 
+                Ziplock plastic storage bags work, too.
+            </h3>
+        </div>
+        <div>
+            <h1 class="question">How do I order?<i class="fas fa-chevron-down"></i></h1>
+            <h3 class="hidden">You can come in to our physical store or call our number at 519-508-4949 
+                to place an order. Once the order is ready, you can come in to pick up your dessert! 
+                We also have ready to go desserts in our store. If you want to order brittle, 
+                please place your order two days in advance.
+            </h3>
+        </div>
+        <div>
+            <h1 class="question">Do you do delivery?<i class="fas fa-chevron-down"></i></h1>
+            <h3 class="hidden">Unfortunately, at this time, we do not to delivery.
+            </h3>
+        </div>
+        <div>
+            <h1 class="question">What are your most popular items?<i class="fas fa-chevron-down"></i></h1>
+            <h3 class="hidden">Our most popular items are the ice cream and milkshakes, 
+                and our specialty is peanut brittle!
+            </h3>
+        </div>
+    </main>
+    <footer>
         <p>49 York St, Stratford, ON N5A 1A1</p>
         <p>Saturdays 12 - 5 pm</p>
         <ul>
@@ -31,8 +64,14 @@
             <li> <a href="https://www.facebook.com/JENNandLarrys/"><i class="fab fa-facebook-square"></a></i></li>
         </ul>
     </footer>
-    <!-- Fontawesome CDN -->
+    <!-- CDN -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.question').on('click',function () {
+            $(this).next().toggleClass('hidden');
+        })
+    </script>
 </body>
 </html>

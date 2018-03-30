@@ -1,7 +1,7 @@
 #filters {
     display: flex;
     justify-content: space-evenly;
-    margin: 3vh 25px;
+    padding: 3vh 25px;
     flex-flow: row wrap;
 }
 #filters li {
@@ -14,10 +14,7 @@
     cursor: pointer;
 }
 .selected {
-    background-color: var(--pink);
-}
-.hide {
-    display: none;
+    background-color: var(--yellow);
 }
 .name {
     font-size: 1.1rem;
@@ -27,7 +24,7 @@
 }
 /* product flexbox */
 section {
-    margin: 0 4vw;
+    padding: 2vh 4vw;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;

@@ -38,7 +38,7 @@ h3 {
 h2 {
     font-size: 1.6rem;
     text-align: center;
-    margin: 10vh 0;
+    padding: 70px 0;
 }
 h1 {
     font-weight: 400;
@@ -124,19 +124,21 @@ img.big {
     object-fit: cover;
     margin: 0 auto 5vh;
 }
-.emphasis {
-    font-weight: 700;
-    text-decoration: underline;
+.hidden {
+    display: none;
 }
 #featured div {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+#featured {
+    background-color: var(--pink);
 }
 /* media queries */
 @media only screen and (max-width: 800px) {
     h2 {
-        margin: 50px 0;
+        padding: 50px 0;
     }
     #featured div {
         flex-flow: column wrap;
@@ -149,5 +151,8 @@ img.big {
     }
     #logo {
         font-size: 0.9rem;
+    }
+    footer {
+        font-size: 0.8rem;
     }
 }
