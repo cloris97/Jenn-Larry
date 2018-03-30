@@ -114,7 +114,7 @@ footer a:hover {
 }
 img.small {
     width: 250px;
-    height: auto;
+    height: 250px;
     object-fit: cover;
 }
 img.big {
@@ -131,7 +131,7 @@ img.big {
 #featured div {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 /* media queries */
 @media only screen and (max-width: 800px) {
@@ -140,6 +140,7 @@ img.big {
     }
     #featured div {
         flex-flow: column wrap;
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 450px) {

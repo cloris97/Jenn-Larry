@@ -50,6 +50,7 @@ main {
     }
     #featured {
         grid-row: 3 / 4;
+        padding-bottom: 20px;
     }
     .price {
         margin-bottom: 20px;
