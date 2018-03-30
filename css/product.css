@@ -4,7 +4,7 @@
     grid-template-rows: 40px auto;
     align-items: center;
     background-color: var(--yellow);
-    padding: 40px 0;
+    padding: 20px 0 40px;
 }
 #back {
     font-size: 1em;
