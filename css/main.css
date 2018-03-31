@@ -115,14 +115,17 @@ footer a:hover {
 img.small {
     width: 250px;
     height: 250px;
-    object-fit: cover;
 }
 img.big {
     height: 300px;
-    width: auto;
+    width: 300px;
     display: block;
-    object-fit: cover;
     margin: 0 auto 5vh;
+}
+img {
+    object-fit: cover;
+    border: 8px solid white;
+    border-radius: 50%;
 }
 .hidden {
     display: none;
