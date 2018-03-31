@@ -112,11 +112,11 @@ footer a {
 footer a:hover {
     opacity: 0.6;
 }
-img.small {
+.small {
     width: 250px;
     height: 250px;
 }
-img.big {
+.big {
     height: 300px;
     width: 300px;
     display: block;
