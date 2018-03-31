@@ -3,8 +3,9 @@
     --black: #1e1e1e;
     --blue: #def0fb;
     --yellow: #fff1d3;
-    --pink: #fff5f1;
+    --pink: #F7F0EA;
     --grey: #404040;
+    --darkPink:#F1E3D8;
 }
 /* default properties */
 * {
@@ -38,7 +39,7 @@ h3 {
 h2 {
     font-size: 1.6rem;
     text-align: center;
-    padding: 70px 0;
+    padding: 60px 0;
 }
 h1 {
     font-weight: 400;
@@ -133,10 +134,10 @@ img {
 #featured div {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 #featured {
-    background-color: var(--pink);
+    background-color: var(--yellow);
 }
 /* media queries */
 @media only screen and (max-width: 800px) {
@@ -145,7 +146,7 @@ img {
     }
     #featured div {
         flex-flow: column wrap;
-        margin-bottom: 20px;
+        padding-bottom: 10px;
     }
 }
 @media only screen and (max-width: 450px) {

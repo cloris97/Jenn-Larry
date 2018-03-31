@@ -31,7 +31,7 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: var(--yellow);
+    background-color: var(--pink);
 }
 /* featured section */
 #featured {

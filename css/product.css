@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px auto;
     align-items: center;
-    background-color: var(--yellow);
+    background-color: var(--darkPink);
     height: 90vh;
 }
 #back {
@@ -20,7 +20,8 @@
     grid-column: 1 / span 1;
 }
 #image img {
-    max-height: 400px;
+    height: 400px;
+    width: 400px;
 }
 #description {
     text-align: center;
@@ -42,7 +43,7 @@ h3 {
     margin: 10px 0;
 }
 #product img {
-    background-color: #FFF9EC;
+    background-color: var(--pink);
 }
 /* media queries */
 
