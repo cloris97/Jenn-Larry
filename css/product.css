@@ -1,7 +1,7 @@
 #product {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 70px auto;
     align-items: center;
     background-color: var(--darkPink);
     height: 90vh;
@@ -10,7 +10,7 @@
     font-size: 1em;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    padding: 0 40px;
+    margin: 0 100px;
 }
 #back p {
     display: inline-block;
@@ -54,6 +54,9 @@ h3 {
     h4 {
         font-size: 1.8rem;
     }
+    #back {
+        margin: 0 40px;
+    }
     #description {
         margin:0 3vw;
     }
@@ -75,7 +78,7 @@ h3 {
         margin: 0 10px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     #product {
         height: auto;
     }
@@ -87,7 +90,7 @@ h3 {
         margin: 0 20px;
     }
     #back {
-        padding: 10px 20px;
+        margin: 10px 20px;
     }
 }
 @media only screen and (max-width: 400px) {
