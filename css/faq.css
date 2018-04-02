@@ -21,16 +21,19 @@ h3 {
 }
 /* media queries */
 @media only screen and (max-width: 880px) {
+    /* question font size becomes smaller */
     h1 {
         font-size: 1.5rem;
     }
 }
 @media only screen and (max-width: 600px) {
+    /* less page padding and more space for texts */
     main {
         margin: 0 4vw;
     }
 }
 @media only screen and (max-width: 450px) {
+    /* smaller texts */
     h1 {
         font-size: 1.2rem;
     }

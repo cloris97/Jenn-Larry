@@ -1,7 +1,7 @@
 /* blue background */
 main {
-    background-color: var(--blue);
     height: 92vh;
+    background-image: url('../img/stripe.png');
 }
 /* default google embed style */
 iframe {

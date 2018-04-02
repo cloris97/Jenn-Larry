@@ -1,11 +1,11 @@
-/* main content grid */
+/* main content grid 2 col * 3 rows */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3;
 }
 
-/* mission section */
+/* mission section top right with everything centered, blue bg*/
 #mission {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -17,11 +17,12 @@ main {
     padding: 0 5vw;
     background-color: var(--blue);
 }
+/* bold underlined emphasis text */
 .emphasis {
     font-weight: 700;
     text-decoration: underline;
 }
-/* product section */
+/* product section top left same height as mission statement, everything centered, pink bg*/
 #product {
     grid-column: 2 / span 1;
     grid-row: 1 / 2;
@@ -33,7 +34,7 @@ main {
     align-items: center;
     background-color: var(--pink);
 }
-/* featured section */
+/* featured section on the bottom row*/
 #featured {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
@@ -41,9 +42,7 @@ main {
 
 /* media queries */
 @media only screen and (max-width: 800px) {
-    main {
-        grid-template-rows: 4;
-    }
+    /* change to 1 column layout */
     #mission {
         grid-column: 1 / -1;
     }

@@ -1,11 +1,15 @@
-#product {
+/* main grid containing product img and description */
+ #product {
     display: grid;
+    /* 2 columns */
     grid-template-columns: 1fr 1fr;
+    /* 70px is reserved for back button */
     grid-template-rows: 70px auto;
     align-items: center;
     background-color: var(--darkPink);
     height: 90vh;
 }
+/* back button is 1 col 1 row with horizontal margin */
 #back {
     font-size: 1em;
     grid-column: 1 / -1;
@@ -15,30 +19,35 @@
 #back p {
     display: inline-block;
 }
+/* img is centered on the left col */
 #image {
-    margin: 2vh auto;
+    margin: 0 auto;
     grid-column: 1 / span 1;
 }
 #image img {
     height: 400px;
     width: 400px;
 }
+/* description on the right, nicely centered with margin and max-width for easy reading */
 #description {
     text-align: center;
     max-width: 800px;
     margin: 0 5vw;
     grid-column: 2 / span 1;
 }
+/* h4 for title */
 h4 {
     font-size: 2rem;
     margin-bottom: 30px;
 }
+/* h5 is serif paragraph */
 h5 {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 30px;
 }
+/* h3 is sans-serif caption, all caps inherited from main.css */
 h3 {
     margin: 10px 0;
 }
@@ -46,22 +55,26 @@ h3 {
     background-color: var(--pink);
 }
 /* media queries */
-
 @media only screen and (max-width: 1000px) {
-    img {
+    /* smaller img size */
+    #image img {
         height: 300px;
+        width: 300px;
     }
+    /* smaller title size */
     h4 {
         font-size: 1.8rem;
     }
+    /* smaller margin */
     #back {
         margin: 0 40px;
     }
     #description {
-        margin:0 3vw;
+        margin: 0 3vw;
     }
 }
 @media only screen and (max-width: 800px) {
+    /* smaller font size */
     h4 {
         font-size: 1.5rem;
     }
@@ -71,9 +84,6 @@ h3 {
     h3 {
         font-size: 0.75rem;
     }
-    img {
-        height: 250px;
-    }
     #description {
         margin: 0 10px;
     }
@@ -82,20 +92,25 @@ h3 {
     #product {
         height: auto;
     }
+    /* change to 1 column layout */
     #image {
         grid-column: 1 / -1;
     }
     #description {
         grid-column: 1 / -1;
-        margin: 0 20px;
+        margin: 20px;
     }
     #back {
         margin: 10px 20px;
     }
+    .price {
+        padding-bottom: 20px;
+    }
 }
 @media only screen and (max-width: 400px) {
+    /* no horizontal margin */
     #description {
         grid-column: 1 / -1;
-        margin: 0;
+        margin: 10px 0;
     }
 }

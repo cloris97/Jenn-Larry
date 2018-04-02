@@ -1,9 +1,11 @@
+/* flexbox to make filters space evenly */
 #filters {
     display: flex;
     justify-content: space-evenly;
     padding: 3vh 25px;
     flex-flow: row wrap;
 }
+/* individual filter has spacious padding and indicates its clickable */
 #filters li {
     padding: 10px 25px;
     font-family: 'Lato', sans-serif;
@@ -13,16 +15,18 @@
     color: var(--grey);
     cursor: pointer;
 }
+/* bg color for selected filter */
 .selected {
     background-color: var(--darkPink);
 }
+/* adjusting the figcaption font sizes */
 .name {
     font-size: 1.1rem;
 }
 .price {
     font-size: 0.9rem;
 }
-/* product flexbox */
+/* product flexbox 4 col */
 section {
     padding: 40px 4vw;
     display: grid;
@@ -30,24 +34,28 @@ section {
     grid-template-rows: auto;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
-    background-color: #F1E3D8;
+    background-color: var(--darkPink);
 }
+/* images with subtle pink border instead of white */
 img {
-    background-color: #F7F0EA;
-    border-color: #F7F0EA;
+    background-color: var(--pink);
+    border-color: var(--pink);
 }
 /* media queries */
 @media only screen and (max-width: 1150px) {
+    /* shrink to 3 col */
     section {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media only screen and (max-width: 850px) {
+    /* 2 col */
     section {
         grid-template-columns: 1fr 1fr;
     }
 }
 @media only screen and (max-width: 650px) {
+    /* smaller white spaces */
     section {
         padding: 20px 0;
         grid-column-gap: 0;
@@ -67,6 +75,7 @@ img {
     }
 }
 @media only screen and (max-width: 450px) {
+    /* smaller white spaces and font sizes */
     #filters {
         padding: 10px;
     }
