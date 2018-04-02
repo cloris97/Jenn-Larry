@@ -104,10 +104,12 @@ footer {
     text-align: center;
     background-color: white;
 }
+/* sans-serif with high line-height */
 p {
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
 }
+/* divider between icons and texts */
 footer ul {
     margin-top: 1vh;
 }
@@ -116,6 +118,7 @@ footer li {
     font-size: 1.3rem;
     width: 30px;
 }
+/* hover on icons animation */
 footer a {
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -123,6 +126,7 @@ footer a {
 footer a:hover {
     opacity: 0.6;
 }
+/* defaught image dimensions */
 .small {
     width: 250px;
     height: 250px;
@@ -133,6 +137,7 @@ footer a:hover {
     display: block;
     margin: 0 auto 5vh;
 }
+/* images have solid, thick, round, and white border */
 img {
     object-fit: cover;
     border: 8px solid white;
@@ -154,12 +159,14 @@ img {
     h2 {
         padding: 50px 0;
     }
+    /* div wraps to column */
     #featured div {
         flex-flow: column wrap;
         padding-bottom: 10px;
     }
 }
 @media only screen and (max-width: 450px) {
+    /* small font sizes */
     nav li {
         font-size: 0.6rem;
     }
