@@ -1,14 +1,17 @@
+/* header element is nicely centered */
 #header {
     display: flex;
     height: 25vh;
     align-items: center;
     justify-content: center;
 }
+/* images here are bigger than other pages cuz texts are longer */
 .big {
     height: 400px;
     width: 400px;
     margin: auto; 
 }
+/* the main centent with 2x2 grid is nicely centered*/
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,6 +22,7 @@ main {
     /* background-color: var(--blue); */
     padding: 0 3vw;
 }
+/* to vertically center everything, each element has its own flexbox */
 #jenn, #p1, #p2, #store {
     height: 70vh;
     display: flex;
@@ -26,17 +30,20 @@ main {
     justify-content: center;
     align-items: center;
 }
+/* photo of jenn on top left */
 #jenn {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     background-color: var(--pink);
 }
+/* adjusted padding for correctly centering the div */
 h2 {
-    padding: 30px 0;
+    padding: 0 0 30px;
 }
 p {
     font-size: 1.1rem;
 }
+/* p1 on the top right */
 #p1 {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
@@ -44,12 +51,14 @@ p {
     background-color: var(--blue);
     align-self: center;
 }
+/* p2 on the bottom left */
 #p2 {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     padding: 0 3vw;
     background-color: var(--blue);
 }
+/* photo of store on the bottom right */
 #store {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
@@ -57,11 +66,13 @@ p {
 }
 /* media queries */
 @media only screen and (max-width: 1000px) {
+    /* horizontal padding is slightly smaller */
     #p1, #p2 {
         padding: 0 20px;
     }
 }
 @media only screen and (max-width: 800px) {
+    /* most things occupies smaller space */
     #header {
         height: 20vh;
     }
@@ -77,6 +88,7 @@ p {
     }
 }
 @media only screen and (max-width: 650px) {
+    /* adjusted grid for 1 column */
     #header {
         height: 15vh;
     }

@@ -1,20 +1,25 @@
+/* blue background */
 main {
     background-color: var(--blue);
     height: 92vh;
 }
+/* default google embed style */
 iframe {
     border: 0;
 }
+/* map is centered */
 #map {
     padding: 20px 0;
     text-align: center;
 }
+/* section of icons is spread evenly using flexbox */
 section {
     display: flex;
     flex-direction: column wrap;
     justify-content: space-evenly;
     padding: 20px 0;
 }
+/* sans-serif texts */
 .icon h3, .icon a {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -22,14 +27,17 @@ section {
     padding-top: 10px;
     font-size: 1rem;
 }
+/* icons are larger */
 .icon {
     text-align: center;
     font-size: 1.5rem;
 }
 @media only screen and (max-width: 600px) {
+    /* smaller iframe width */
     iframe {
         width: auto;
     }
+    /* smaller everything */
     .icon h3, .icon a {
         font-size: 0.8rem;
     }
