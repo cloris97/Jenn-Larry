@@ -70,14 +70,21 @@ p {
     #p1, #p2 {
         padding: 0 20px;
     }
+    .big {
+        height: 325px;
+        width: 325px;
+    }
 }
 @media only screen and (max-width: 800px) {
     /* most things occupies smaller space */
+    main {
+        padding: 0;
+    }
     #header {
         height: 20vh;
     }
     #jenn, #p1, #p2, #store {
-        height: 50vh;
+        height: 55vh;
     }
     .big {
         height: 325px;

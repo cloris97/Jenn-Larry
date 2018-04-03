@@ -68,6 +68,7 @@ figure {
 nav {
     background: white;
 }
+
 /* menu items are vertically centered and horizontally evenly spread */
 nav ul {
     display: flex;
