@@ -36,10 +36,9 @@ section {
     grid-row-gap: 30px;
     background-color: var(--darkPink);
 }
-/* images with subtle pink border instead of white */
+/* images with subtle pink background */
 img {
     background-color: var(--pink);
-    border-color: var(--pink);
 }
 /* media queries */
 @media only screen and (max-width: 1150px) {
